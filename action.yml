@@ -1,0 +1,29 @@
+name: 'Archive UHK releases'
+description: 'Upload specific files to AWS S3'
+inputs:
+  FILE_PATTERN:
+    description: File pattern of the upload files
+    required: true
+  GH_TOKEN:
+    description: Github token to query the commit message
+    required: true
+  S3_ACCESS_KEY_ID:
+    description: S3 Access key Id
+    required: true
+  S3_ACCESS_KEY:
+    description: S3 Access key
+    required: true
+  S3_REGION:
+    description: S3 Region
+    required: true
+  S3_BUCKET:
+    description: S3 Bucket
+    required: true
+  S3_INDEX_FILE_KEY:
+    description: S3 Key of the json index file that store the extra meta data of each s3 object
+    required: true
+  S3_KEY_PREFIX:
+    description: S3 key prefix of the uploaded file. Like destination folder
+runs:
+  using: node20
+  main: 'lib/run.js'

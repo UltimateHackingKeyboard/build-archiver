@@ -1,0 +1,10 @@
+services:
+  localstack:
+    image: localstack/localstack
+    restart: always
+    environment:
+      SERVICES: s3
+      S3_PORT: 4511
+    ports:
+      - '4510-4559:4510-4559'
+      - '4566:4566'
