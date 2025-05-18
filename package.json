@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "test": "node --env-file=.env --test"
+    "test": "node --env-file=.env --test --test-concurrency=1"
   },
   "keywords": [],
   "author": "",
