@@ -1,5 +1,4 @@
 import nock from 'nock'
-import process from 'node:process'
 import { after, before, beforeEach, describe, it } from 'node:test'
 
 import { run } from '../lib/run.js'

@@ -1,5 +1,3 @@
-import process from 'node:process'
-
 import { getInputs } from '../../lib/utils/get-inputs.js'
 import { getS3Client } from '../../lib/utils/get-s3-client.js'
 
