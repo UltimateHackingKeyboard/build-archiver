@@ -1,5 +1,6 @@
 import nock from 'nock'
 import { after, before, beforeEach, describe, it } from 'node:test'
+import { TEST_GITHUB_SHA } from '../lib/constants.js'
 
 import { run } from '../lib/run.js'
 import getCommitInfo from './_helpers/get-commit-info.js'
@@ -22,7 +23,7 @@ describe('run', async () => {
 
   await it('should upload files and create index', async ({ assert }) => {
     nock('https://api.github.com')
-      .get('/repos/me/my-repo/git/commits')
+      .get(`/repos/me/my-repo/git/commits/${TEST_GITHUB_SHA}`)
       .reply(200, getCommitInfo())
     await run()
     const s3Objects = await getS3Objects()
