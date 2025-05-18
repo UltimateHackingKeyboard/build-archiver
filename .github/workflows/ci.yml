@@ -20,6 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - run: docker compose up -d --quiet-pull
+
       - name: Use Node.js (.nvmrc)
         uses: actions/setup-node@v4
         with:
