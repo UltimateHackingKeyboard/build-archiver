@@ -25,4 +25,4 @@ inputs:
     description: S3 key prefix of the uploaded file. Like destination folder
 runs:
   using: node20
-  main: 'lib/run.js'
+  main: 'main.js'

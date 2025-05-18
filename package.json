@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "description": "Archive release",
-  "main": "lib/run.js",
+  "main": "main.js",
   "scripts": {
     "lint": "eslint",
     "lint:fix": "eslint --fix",
