@@ -21,7 +21,6 @@ inputs:
     required: true
   S3_INDEX_FILE_KEY:
     description: S3 Key of the json index file that store the extra meta data of each s3 object
-    required: true
   S3_KEY_PREFIX:
     description: S3 key prefix of the uploaded file. Like destination folder
 runs:
