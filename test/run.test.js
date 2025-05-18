@@ -30,16 +30,16 @@ describe('run', async () => {
 
     assert.deepStrictEqual(s3Objects, [
       {
+        data: '[{"sha":"b52b1244","message":"commit message","date":"2020-05-01T12:000.000Z","files":["test-01.txt","test-02.txt"]}]',
+        key: '/agent/index.json',
+      },
+      {
         data: '01\n',
-        key: '/agent/b52b1244/test-01.txt',
+        key: '/agent/sha/b52b1244/test-01.txt',
       },
       {
         data: '02\n',
-        key: '/agent/b52b1244/test-02.txt',
-      },
-      {
-        data: '[{"sha":"b52b1244","message":"commit message","date":"2020-05-01T12:000.000Z","files":["test-01.txt","test-02.txt"]}]',
-        key: '/agent/index.json',
+        key: '/agent/sha/b52b1244/test-02.txt',
       },
     ])
   })
