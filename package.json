@@ -28,6 +28,6 @@
     "eslint-plugin-unicorn": "64.0.0",
     "globals": "17.6.0",
     "nock": "14.0.14",
-    "prettier": "3.5.3"
+    "prettier": "3.8.3"
   }
 }
