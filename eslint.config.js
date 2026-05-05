@@ -2,8 +2,9 @@ import eslint from '@eslint/js'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import globals from 'globals'
 import prettierPlugin from 'eslint-plugin-prettier/recommended'
+import { defineConfig } from 'eslint/config'
 
-export default [
+export default defineConfig([
   {
     files: ['**/*.js'],
     languageOptions: {
@@ -21,4 +22,4 @@ export default [
   eslintPluginUnicorn.configs['flat/recommended'],
   // should be the last
   prettierPlugin,
-]
+])
