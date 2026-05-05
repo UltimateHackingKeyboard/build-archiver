@@ -21,7 +21,7 @@ export default async function getS3Objects() {
     result.push(o)
   }
 
-  return result.sort(function (a, b) {
+  return result.toSorted(function (a, b) {
     return a.key.localeCompare(b.key)
   })
 }
