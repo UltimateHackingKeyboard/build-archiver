@@ -1,5 +1,5 @@
 name: 'Archive UHK releases'
-description: 'Upload specific files to AWS S3'
+description: 'Upload specific files to S3-compatible object storage'
 inputs:
   FILE_PATTERN:
     description: File pattern of the upload files
@@ -19,6 +19,8 @@ inputs:
   S3_BUCKET:
     description: S3 Bucket
     required: true
+  S3_ENDPOINT:
+    description: Optional custom S3 endpoint (e.g. Backblaze B2 https://s3.<region>.backblazeb2.com)
   S3_INDEX_FILE_KEY:
     description: S3 Key of the json index file that store the extra meta data of each s3 object
   S3_KEY_PREFIX:
