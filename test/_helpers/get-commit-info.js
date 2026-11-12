@@ -8,9 +8,14 @@ export default function getCommitInfo() {
     sha: TEST_GITHUB_SHA,
     message: 'commit message',
     author: {
-      date: '2020-05-01T12:000.000Z',
+      date: '2020-04-30T12:000.000Z',
       email: 'email@example.com',
       name: 'Author',
+    },
+    committer: {
+      date: '2020-05-01T12:000.000Z',
+      email: 'email@example.com',
+      name: 'Committer',
     },
   }
 }
